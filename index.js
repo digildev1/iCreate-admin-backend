@@ -49,15 +49,7 @@ dotenv.config()
 
 
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://icreation.netlify.app");
-  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+
 
 mongoose.connect(
   "mongodb+srv://dbdev:KAci4d3B03LHWbGq@cluster0.7m0lwu4.mongodb.net/testcards",
